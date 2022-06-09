@@ -1,0 +1,224 @@
+:root {
+  --color-blue-medium: #8fe2e4;
+  --color-purple: #632ce7;
+  --color-gray: #ccc;
+  --color-gray-medium: #f8f9fa;
+  --color-yellow: #fac32c;
+  --color-blue:#142aeb;
+  --color-red: #e90f0f;
+  --color-dark:#000;
+  --color-green:#00FF00;
+  --color-Navy:#000080;
+  
+}
+
+/*------ General Style ------- */
+a{
+  color: inherit !important;
+  transition: all 300ms;
+}
+
+a:hover{
+  transform: scale(1.15);
+}
+.container > .row{
+  margin-bottom: 3rem;
+}
+
+.display-2{
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.col-12{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: all 300ms;
+}
+
+.col-12:hover{
+  transform: scale(1.15);
+}
+
+.col-lg-7{
+  border-radius: 4px;
+}
+
+.w-1001{
+  border-radius: 8px;
+  height: 560px;
+  width: 100%;
+  transition: all 300ms;
+}
+ .w-1001:hover{
+   transform: scale(1.1);
+ }
+
+.w-100 {
+  width: 100%!important;
+}
+/*------ SECTIONS ------- */
+/*------> Nav*/
+.navbar-brand > img{
+  width: 85px;
+}
+.navbar-main .active {
+ text-decoration: underline wavy var(--color-purple);
+ text-underline-offset: 9px;
+}
+
+.navbar-main{
+  
+  text-decoration-color: #e90f0f;
+}
+
+
+
+
+
+/*------> Header*/
+
+.icons-social-networks > a{
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s filter;
+}
+
+.icons-social-networks > a:hover{
+  filter: opacity(0.5);
+}
+
+.bg-Instagram{
+  background-color: yellow;
+}
+.bg-twitter{
+  background-color: #8fe2e4;
+}
+.bg-Tiktok{
+  background-color:red;
+}
+.photo-frame{
+  font-size: 20px;
+}
+
+.photo-frame::before, .photo-frame::after{
+  content: "";
+  display: block;
+  width: var(--box-size);
+  height: var(--box-size);
+  position: absolute;
+  z-index: -10;
+  animation: turnZ 7s linear alternate-reverse infinite;
+}
+
+.photo-frame::before{
+  --box-size: 3em;
+  background-image: radial-gradient(var(--color-blue-medium)50%, var(--color-purple)50% );
+  top: calc( 100% - ( var(--box-size) /2));
+  right: calc(99% - (var(--box-size) /2));
+}
+
+
+.photo-frame::after{
+  --box-size: 5em;
+  bottom: calc(98% - ( var(--box-size) /2));
+  left: calc(98% - ( var(--box-size) /2));
+  background: linear-gradient(45deg, var(--color-gray-medium) 45%, transparent 45%),
+  radial-gradient(var(--color-purple) 30%, var(--color-yellow) 30% 70%, var(--color-gray-medium)70%, transparent 70%
+  );
+}
+
+@keyframes turnZ{
+  to{
+    transform: rotate(5turn);
+  }
+}
+.header-main{
+  min-height: 100vh;
+}
+
+p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+
+.navbar-nav{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* -------> service */
+.icon-services{
+   --box-size: 200px;
+   width: var(--box-size);
+   height: var(--box-size);
+   padding: 10px;
+}
+
+/* Games  */
+.Games-item>img {
+  transition: .4s transform;
+}
+
+.Games-item:hover>img {
+  transform: scale(0.96);
+}
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width:992px) {
+  .col-10.col-md-10.col-lg-3.bg-dark.rounded.shadow.p-3.fw-light {
+    margin-top: 2rem;
+  }
+
+  .mt-2 {
+    margin-top: 2.4rem !important;
+  }
+
+  .col-9.col-lg-7.bg-dark.text-center.py-4.px-3.shadow.position-relative.photo-frame {
+    margin-top: 2rem;
+  }
+
+  .icons-social-networks {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .col-md-7 {
+    text-align: center;
+  }
+
+  .photo-frame.position-relative.shadow {
+    margin-top: 3rem;
+  }
+
+  .sec-clients {
+    text-align: center;
+  }
+
+  .sec-clients a img {
+    width: 20px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .w-75 {
+    padding: 2rem;
+  }
+
+  .col-12.py-3.text-end.display-4 {
+    display: none;
+  }
+
+  .row-justify-content-center.text-center.mb-3 {
+    margin-top: 5rem;
+  }
+}

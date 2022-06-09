@@ -1,0 +1,29 @@
+:root {
+    --color-blue-medium: #8fe2e4;
+    --color-purple: #632ce7;
+    --color-gray: #ccc;
+    --color-gray-medium: #032546;
+    --color-yellow: #fac32c;
+    --color-blue:#142aeb;
+    --color-red: #e90f0f;
+    --color-dark:#000;
+    --color-green:#00FF00;
+    --color-Navy:#000080;
+    
+  }
+  
+  /*------ General Style ------- */
+  a{
+    color: inherit !important;
+  }
+  
+ 
+
+
+
+.bg-dark{
+background-image: url('./img/717781.jpg');
+
+}
+
+

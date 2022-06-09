@@ -1,0 +1,98 @@
+:root {
+  --color-blue-medium: #8fe2e4;
+  --color-purple: #632ce7;
+  --color-gray: #ccc;
+  --color-gray-medium: #f8f9fa;
+  --color-yellow: #fac32c;
+  --color-blue:#142aeb;
+  --color-red: #e90f0f;
+}
+
+ 
+
+/*------ General Style ------- */
+a{
+  color: inherit !important;
+}
+
+
+
+/*------ SECTIONS ------- */
+/*------> Nav*/
+.navbar-brand > img{
+  width: 100px;
+}
+
+
+
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('fondo.jpg');
+}
+
+
+.form-Acceder{
+  width: 500px;
+  height: 555px;
+  background-color: var(--color-blue-medium);
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+  justify-content: center;
+   border-radius: 25px;
+}
+
+.form-Acceder h4{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+
+.Controls{
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  
+}
+
+.form-Acceder p{
+  height: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form-Acceder a{
+  color: white;
+  text-decoration: underline;
+}
+
+.form-Acceder a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-Acceder .btn-outline-danger {
+  width: 100%;
+  background: red;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
