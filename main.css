@@ -16,18 +16,22 @@
 a{
   color: inherit !important;
   transition: all 300ms;
+  
+  
 }
 
 a:hover{
   transform: scale(1.15);
+  
 }
 .container > .row{
   margin-bottom: 3rem;
+  
 }
 
 .display-2{
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin-top: 40px;
+ margin-top: 20px;
 }
 
 .col-12{
@@ -41,12 +45,14 @@ a:hover{
 
 .col-lg-7{
   border-radius: 4px;
+  
 }
 
 .w-1001{
+  
   border-radius: 8px;
-  height: 560px;
-  width: 100%;
+  height: 490px;
+  width: 100%!important;
   transition: all 300ms;
 }
  .w-1001:hover{
@@ -67,6 +73,7 @@ a:hover{
 }
 
 .navbar-main{
+  transition: 300ms;
   
   text-decoration-color: #e90f0f;
 }
@@ -195,10 +202,12 @@ p{
 @media screen and (max-width:768px) {
   .col-md-7 {
     text-align: center;
+    position: relative;
+    top: 20px;
   }
 
   .photo-frame.position-relative.shadow {
-    margin-top: 3rem;
+    margin-top: 0.5rem;
   }
 
   .sec-clients {
