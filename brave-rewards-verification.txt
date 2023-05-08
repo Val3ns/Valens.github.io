@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: val3ns.github.io
+Token: 9878b7a322cae7a781ac67b46db74312bbb736ceecb1a1f79dd94212b94d62a2
